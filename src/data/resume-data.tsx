@@ -1,107 +1,93 @@
 import {
-  AmbitLogo,
-  BarepapersLogo,
-  BimLogo,
-  CDGOLogo,
-  ClevertechLogo,
-  ConsultlyLogo,
-  EvercastLogo,
-  Howdy,
-  JarockiMeLogo,
-  JojoMobileLogo,
-  Minimal,
-  MobileVikingsLogo,
-  MonitoLogo,
-  NSNLogo,
-  ParabolLogo,
-  TastyCloudLogo,
-  YearProgressLogo,
+  MicrosoftLogo,
+  BitGoLogo,
+  AmazonLogo,
+  ColumbiaLogo,
+  UCILogo,
 } from "@/images/logos";
 import { GitHubIcon, LinkedInIcon, XIcon } from "@/components/icons";
 
 export const RESUME_DATA = {
-  name: "Bartosz Jarocki",
-  initials: "BJ",
-  location: "Wrocław, Poland, CET",
-  locationLink: "https://www.google.com/maps/place/Wrocław",
+  name: "Sunny Bakhda",
+  initials: "SB",
+  location: "California",
+  locationLink: "https://www.google.com/maps/place/Irvine",
   about:
-    "Full Stack Engineer focused on building products with extra attention to detail",
+    "building robust and performant fullstack applications",
   summary:
-    "As a Full Stack Engineer, I have successfully taken multiple products from 0 to 1. I lead teams effectively, ensuring an environment where people can do their best work. Currently, I work mostly with TypeScript, React, Node.js, and GraphQL. I have over 8 years of experience in working remotely with companies all around the world.",
-  avatarUrl: "https://avatars.githubusercontent.com/u/1017620?v=4",
+    "I'm a fullstack engineer with 4 years of experience. I'm passionate about designing intuitive user experiences, creating robust internet infrastructure, and integrating all my feedback loops with AI.",
+  avatarUrl: "https://avatars.githubusercontent.com/u/25540727?s=400&u=51534524ecb35c86b5ef6d318baf635898531ee3&v=4",
   personalWebsiteUrl: "https://jarocki.me",
   contact: {
-    email: "bartosz.jarocki@hey.com",
-    tel: "+48530213401",
+    email: "shikharbakhda@gmail.com",
+    tel: "",
     social: [
       {
         name: "GitHub",
-        url: "https://github.com/BartoszJarocki",
+        url: "https://github.com/sunnybak",
         icon: GitHubIcon,
       },
       {
         name: "LinkedIn",
-        url: "https://www.linkedin.com/in/bjarocki/",
+        url: "https://www.linkedin.com/in/shikharbakhda/",
         icon: LinkedInIcon,
       },
       {
         name: "X",
-        url: "https://x.com/BartoszJarocki",
+        url: "https://x.com/sunnybak_",
         icon: XIcon,
       },
     ],
   },
   education: [
     {
-      school: "Wrocław University of Technology",
-      degree: "Bachelor's Degree in Control systems engineering and Robotics",
-      start: "2007",
-      end: "2010",
+      school: "UC Irvine",
+      logo: UCILogo,
+      degree: "Master's Degree in EECS; Focus: HPC and LLMs",
+      start: "Sep 2023",
+      end: "Jun 2024",
+    },
+    {
+      school: "Columbia University",
+      logo: ColumbiaLogo,
+      degree: "Bachelor's Degree in Computer Science; Focus: AI and Crypto",
+      start: "2016",
+      end: "2020",
     },
   ],
   work: [
     {
-      company: "Parabol",
-      link: "https://parabol.co",
-      badges: ["Remote"],
-      title: "Senior Full Stack Developer",
-      logo: ParabolLogo,
-      start: "2021",
-      end: "2024",
+      company: "Microsoft Azure",
+      link: "https://bitgo.com",
+      badges: ["Irvine", "Part-Time"],
+      title: "Lead Software Engineer",
+      logo: MicrosoftLogo,
+      start: "2023",
+      end: "present",
       description:
         "Implemented new features, led squad, worked on improving the way developers ship the code, started migration from Emotion to Tailwind CSS and more. Technologies: React, TypeScript, GraphQL",
     },
     {
-      company: "Clevertech",
-      link: "https://clevertech.biz",
-      badges: ["Remote"],
-      title: "Lead Android Developer → Full Stack Developer",
-      logo: ClevertechLogo,
-      start: "2015",
+      company: "BitGo",
+      link: "https://bitgo.com",
+      badges: ["San Francisco"],
+      title: "Software Engineer → Lead Software Engineer",
+      logo: BitGoLogo,
+      start: "2021",
+      end: "2023",
+      description:
+        "Implemented new features, led squad, worked on improving the way developers ship the code, started migration from Emotion to Tailwind CSS and more. Technologies: React, TypeScript, GraphQL",
+    },
+    {
+      company: "Amazon",
+      link: "https://www.amazon.com/",
+      badges: ["Seattle"],
+      title: "Software Engineer",
+      logo: AmazonLogo,
+      start: "2020",
       end: "2021",
       description:
         "Created Android mobile apps and led teams for companies like Vision Media, DKMS, or AAA. Built live streaming application for Evercast from scratch. Technologies: Android, Kotlin, React, TypeScript, GraphQL",
-    },
-    {
-      company: "Jojo Mobile",
-      link: "https://bsgroup.eu/",
-      badges: [],
-      title: "Android Developer → Lead Android Developer",
-      logo: JojoMobileLogo,
-      start: "2012",
-      end: "2015",
-      description:
-        "Built an Android team, created Android apps for biggest Polish companies like LOT, Polskie Radio, Agora, PolskaPress",
-    },
-    {
-      company: "Nokia Siemens Networks",
-      link: "https://www.nokia.com",
-      badges: [],
-      title: "C/C++ Developer",
-      logo: NSNLogo,
-      start: "2010",
-      end: "2012",
-      description: "Creating and testing software for LTE base stations",
     },
   ],
   skills: [
@@ -115,7 +101,7 @@ export const RESUME_DATA = {
   ],
   projects: [
     {
-      title: "Consultly",
+      title: "SoulChat",
       techStack: [
         "Side Project",
         "TypeScript",
@@ -125,154 +111,67 @@ export const RESUME_DATA = {
         "WebRTC",
       ],
       description: "A platform to build and grow your online business",
-      logo: ConsultlyLogo,
       link: {
         label: "consultly.com",
         href: "https://consultly.com/",
       },
     },
     {
-      title: "Monito",
-      techStack: ["Side Project", "TypeScript", "Next.js", "Browser Extension"],
-      description:
-        "Browser extension that records everything happening in a web application",
-      logo: MonitoLogo,
-      link: {
-        label: "monito.dev",
-        href: "https://monito.dev/",
-      },
-    },
-    {
-      title: "Jarocki.me",
-      techStack: ["Side Project", "Next.js", "MDX"],
-      description:
-        "My personal website and blog. Built with Next.js and Notion API",
-      logo: JarockiMeLogo,
-      link: {
-        label: "github.com",
-        href: "https://jarocki.me/",
-      },
-    },
-    {
-      title: "Minimal",
-      techStack: ["Side Project", "Next.js", "Puppeteer"],
-      description:
-        "Minimalist calendars, habit trackers and planners generator",
-      logo: Minimal,
-      link: {
-        label: "useminimal.com",
-        href: "https://useminimal.com/",
-      },
-    },
-    {
-      title: "Barepapers",
-      techStack: ["Side Project", "Next.js", "Puppeteer"],
-      description:
-        "Generates beautiful wallpapers using random shapes and gradients",
-      logo: BarepapersLogo,
-      link: {
-        label: "barepapers.com",
-        href: "https://barepapers.com/",
-      },
-    },
-    {
-      title: "Year progress",
-      techStack: ["Side Project", "TypeScript", "Next.js"],
-      description: "Tracks current year progress and displays a countdown",
-      logo: YearProgressLogo,
-      link: {
-        label: "getyearprogress.com",
-        href: "https://getyearprogress.com/",
-      },
-    },
-    {
-      title: "Parabol",
+      title: "Labor Engine Optimization",
       techStack: [
-        "Full Stack Developer",
-        "TypeScript",
-        "React",
-        "Node.js",
-        "GraphQL",
+        "Internship",
       ],
-      description:
-        "The Agile meeting co-pilot that delivers better meetings with less effort",
-      logo: ParabolLogo,
+      description: "A platform to build and grow your online business",
       link: {
-        label: "github.com",
-        href: "https://parabol.co/",
+        label: "consultly.com",
+        href: "https://consultly.com/",
       },
     },
     {
-      title: "Evercast",
+      title: "Cryptech",
       techStack: [
-        "Lead Frontend Developer",
+        "Side Project",
 
-        "TypeScript",
-        "React",
-        "Node.js",
-        "GraphQL",
       ],
-      description:
-        "Creative collaboration platform that combines video conferencing and HD media streaming",
-      logo: EvercastLogo,
+      description: "A platform to build and grow your online business",
       link: {
-        label: "evercast.us",
-        href: "https://www.evercast.us/",
+        label: "consultly.com",
+        href: "https://consultly.com/",
       },
     },
     {
-      title: "Mobile Vikings",
-      techStack: ["Lead Android Developer", "Android", "Kotlin"],
-      description:
-        "Android application for leading virtual mobile operator in Poland",
-      logo: MobileVikingsLogo,
+      title: "Lead-erboard @ CognitiveScale",
+      techStack: [
+        "Internship",
+      ],
+      description: "A platform to build and grow your online business",
       link: {
-        label: "mobilevikings.pl",
-        href: "https://mobilevikings.pl/",
+        label: "consultly.com",
+        href: "https://consultly.com/",
       },
     },
     {
-      title: "Howdy",
-      techStack: ["Lead Android Developer", "Android", "Kotlin"],
-      description:
-        "Howdy is a place for you to join communities you care about",
-      logo: Howdy,
+      title: "Basic Attention Token @ Consensys",
+      techStack: [
+        "Internship",
+      ],
+      description: "A platform to build and grow your online business",
       link: {
-        label: "play.google.com",
-        href: "https://howdy.co/",
+        label: "consultly.com",
+        href: "https://consultly.com/",
       },
     },
     {
-      title: "Tastycloud",
-      techStack: ["Lead Android Developer", "Android", "Kotlin"],
-      description:
-        "Android application for managing and displaying restaurant menus in kiosk mode",
-      logo: TastyCloudLogo,
+      title: "Mech Warfare @ Columbia",
+      techStack: [
+        "Robotics Club",
+        "Leadership",
+      ],
+      description: "A platform to build and grow your online business",
       link: {
-        label: "tastycloud.fr",
-        href: "https://www.tastycloud.fr/",
+        label: "consultly.com",
+        href: "https://consultly.com/",
       },
-    },
-    {
-      title: "Ambit",
-      techStack: ["Lead Android Developer", "Android", "Kotlin"],
-      description:
-        "Android application that helps with sharing your contact details",
-      logo: AmbitLogo,
-    },
-    {
-      title: "Bim",
-      techStack: ["Lead Android Developer", "Android", "Kotlin"],
-      description:
-        "Android application that helps with booking a table in a restaurants",
-      logo: BimLogo,
-    },
-    {
-      title: "Canal Digital GO",
-      techStack: ["Lead Android Developer", "Android", "Kotlin"],
-      description:
-        "Video streaming mobile application for Canal Digital subscribers",
-      logo: CDGOLogo,
     },
   ],
 } as const;

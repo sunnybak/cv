@@ -12,13 +12,13 @@ import Image from "next/image";
 
 export const metadata: Metadata = {
   title: `${RESUME_DATA.name} | ${RESUME_DATA.about}`,
-  description: RESUME_DATA.summary,
+  description: RESUME_DATA.summary.map((s) => s).join(" "),
 };
 
 export default function Page() {
   return (
     <main className="container relative mx-auto scroll-my-12 overflow-auto p-4 print:p-12 md:p-16">
-      <section className="mx-auto w-full max-w-2xl space-y-8 bg-white print:space-y-6">
+      <section className="mx-auto w-full max-w-3xl space-y-8 bg-white print:space-y-6">
         <div className="flex items-center justify-between">
           <div className="flex-1 space-y-1.5">
             <h1 className="text-2xl font-bold">{RESUME_DATA.name}</h1>
@@ -95,9 +95,11 @@ export default function Page() {
         </div>
         <Section>
           <h2 className="text-xl font-bold">About</h2>
-          <p className="text-pretty font-mono text-sm text-muted-foreground">
-            {RESUME_DATA.summary}
-          </p>
+          {RESUME_DATA.summary.map((summary) => (
+            <p key={summary} className="text-pretty font-mono text-sm text-muted-foreground">
+              {summary}
+            </p>
+          ))}
         </Section>
         <Section>
           <h2 className="text-xl font-bold">Work Experience</h2>
@@ -134,7 +136,11 @@ export default function Page() {
                   </h4>
                 </CardHeader>
                 <CardContent className="mt-2 text-xs">
-                  {work.description}
+                  {work.description.split("▪").map((bulletPoint) => (
+                    <p key={bulletPoint} className="text-pretty font-mono text-sm text-muted-foreground">
+                      ▪ {bulletPoint}
+                    </p>
+                  ))}
                 </CardContent>
               </Card>
             );

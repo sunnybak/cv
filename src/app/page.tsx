@@ -22,7 +22,7 @@ export default function Page() {
         <div className="flex items-center justify-between">
           <div className="flex-1 space-y-1.5">
             <h1 className="text-2xl font-bold">{RESUME_DATA.name}</h1>
-            <p className="max-w-md text-pretty font-mono text-sm text-muted-foreground">
+            <p className="max-w-md text-pretty font-mono text-m text-muted-foreground">
               {RESUME_DATA.about}
             </p>
             <p className="max-w-md items-center text-pretty font-mono text-xs text-muted-foreground">
@@ -110,7 +110,7 @@ export default function Page() {
                   <div className="flex items-center justify-between gap-x-2 text-base">
                     <h3 className="inline-flex items-center justify-center gap-x-1 font-semibold leading-none">
                       <Image src={work.logo} alt={`${work.company} logo`} className="w-4 h-4" />
-                      <a className="hover:underline" href={work.link}>
+                      <a className="hover:underline" href={(work as any).link}>
                         {work.company}
                       </a>
 

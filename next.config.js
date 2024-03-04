@@ -10,4 +10,5 @@ const prodConfig = {
     reactStrictMode: true,
 }
 
+// module.exports = devConfig;
 module.exports = prodConfig;

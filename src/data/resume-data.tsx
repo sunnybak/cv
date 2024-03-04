@@ -1,5 +1,6 @@
 import {
   MicrosoftLogo,
+  EuropeLogo,
   BitGoLogo,
   AmazonLogo,
   ColumbiaLogo,
@@ -13,7 +14,7 @@ export const RESUME_DATA = {
   location: "California",
   locationLink: "https://www.google.com/maps/place/Irvine",
   about:
-    "driving AI adoption",
+    "driving AI adoption with optimism",
   summary: [
     "Hi there! I'm a fullstack engineer with 4 years of experience. After graduating from Columbia University in 2020, I've worked at Amazon (~1y backend) and BitGo (~2y fullstack wallet platform integration with multiple blockchains).",
     "I'm currently getting a Masters degree at UCI (graduating in Jun'24) while working on projects in the LLM space, an HPC product for Microsoft, and a few other tinkerings.",
@@ -65,10 +66,20 @@ export const RESUME_DATA = {
       badges: ["Irvine", "Part-Time / Contract"],
       title: "Lead Software Engineer",
       logo: MicrosoftLogo,
-      start: "2024",
+      start: "Jan 2024",
       end: "present",
       description:
         "Improving control, visibility, and predictability in enterprise HPC workloads for SPICE simulations. ▪ Building a fullstack ML product that generates simulation & HPC settings based on 3 business priorities - time to market, cost, and carbon footprint. ▪ Leading this project with 2 other UCI grad students. ▪ Concepts: React, Tensorflow, Linux, SLURM, Python, Cadence, SPICE.",
+    },
+    {
+      company: 'Solo Backpacking Trip',
+      badges: ["Europe", "Travel / Personal Development"],
+      title: "Travel",
+      logo: EuropeLogo,
+      start: "Jun 2023",
+      end: "Aug 2023",
+      description:
+        "Stayed in youth hostels in 15 cities across 8 countries for 2 months with a backpack. ▪ Met 1000 people from various backgrounds and went on adventures with them. ▪ Ran with the bulls in Pamplona, Spain.",
     },
     {
       company: "BitGo",

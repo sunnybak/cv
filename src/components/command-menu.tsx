@@ -3,23 +3,16 @@
 import * as React from "react";
 
 import {
-  CommandDialog,
-  CommandEmpty,
-  CommandGroup,
-  CommandInput,
-  CommandItem,
-  CommandList,
-  CommandSeparator,
-} from "@/components/ui/command";
+  SunnyAvatar,
+} from "@/images/avatars";
 import { ScrollArea } from "@/components/ui/scroll-area"
 import { Textarea } from "@/components/ui/textarea"
 import { SYSTEM_PROMPT } from "@/data/gen-data";
 import { Button } from "./ui/button";
 import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
 import { IconArrowRight } from '@/components/ui/icons'
 
-import { MessageSquare } from "lucide-react";
+import { MessageSquare, SaveIcon } from "lucide-react";
 import {
   Dialog,
   DialogContent,
@@ -29,6 +22,7 @@ import {
   DialogTrigger,
   DialogFooter,
 } from "@/components/ui/dialog"
+import Image from "next/image";
 import { useChat } from 'ai/react';
 
 interface Props {
@@ -60,15 +54,15 @@ export const CommandMenu = ({ links }: Props) => {
     role: "system" | "user" | "assistant";
     content: string;
   }[] = [
-    {
-      id: '1',
-      role: 'system',
-      // content: 'The user is a student at UCI who is trying to find a job. Based on this information chat with the recruiter, while trying to promote the student.'
-      content: SYSTEM_PROMPT,
-    },
-  ];
+      {
+        id: '1',
+        role: 'system',
+        // content: 'The user is a student at UCI who is trying to find a job. Based on this information chat with the recruiter, while trying to promote the student.'
+        content: SYSTEM_PROMPT,
+      },
+    ];
 
-  const { messages, input, setMessages, setInput,  handleInputChange, handleSubmit } = useChat({ initialMessages });
+  const { messages, input, setMessages, setInput, handleInputChange, handleSubmit } = useChat({ initialMessages });
 
   React.useEffect(() => {
     scrollToBottom();
@@ -104,7 +98,6 @@ export const CommandMenu = ({ links }: Props) => {
     },
   ];
 
-
   return (
     <>
       <p className="fixed bottom-0 left-0 right-0 hidden border-t border-t-muted bg-white p-1 text-center text-sm text-muted-foreground print:hidden xl:block">
@@ -112,29 +105,27 @@ export const CommandMenu = ({ links }: Props) => {
         <kbd className="pointer-events-none inline-flex h-5 select-none items-center gap-1 rounded border bg-muted px-1.5 font-mono text-[10px] font-medium text-muted-foreground opacity-100">
           <span className="text-xs">⌘</span>K
         </kbd>{" "}
-        to open the command menu
+        to chat with me
       </p>
 
-      <div className="fixed inset-10 flex items-end justify-end py-30 px-30">
-        <Button
-          onClick={() => setOpen((open) => !open)}
-          variant="default"
-          size="lg"
-          className="fixed bottom-16 right-16 flex rounded-xl shadow-3xl print:hidden"
-        >
-          <p className="px-2">Chat with my resume </p>
-          <MessageSquare className="my-8 size-4" />
-        </Button >
-      </div>
-
+      {/* Chat button and dialog */}
+      <Button
+        onClick={() => setOpen((open) => !open)}
+        variant="default"
+        size="lg"
+        className="fixed bottom-16 right-16 flex rounded-xl shadow-3xl print:hidden"
+      >
+        <p className="px-2">Chat with me </p>
+        <MessageSquare className="my-8 size-4" />
+      </Button>
       {
         open && (
           <Dialog open={open} onOpenChange={setOpen}>
-            <DialogContent className="xl:max-w-[700px] max-w-100 w-[700px] h-[500px]">
+            <DialogContent className="xl:max-w-[700px] max-w-100 w-[1000px] h-[700px] print:hidden">
               <DialogHeader>
                 <DialogTitle>Resume Chat</DialogTitle>
                 <DialogDescription>
-                  Feel free to chat with my resume and ask questions about my experience.
+                  Feel free to chat with me and ask questions about my experience.
                   <div className="mt-4 flex flex-col items-start space-y-2">
                     {exampleMessages.map((message, index) => (
                       <Button
@@ -150,36 +141,42 @@ export const CommandMenu = ({ links }: Props) => {
                   </div>
                 </DialogDescription>
               </DialogHeader>
-              <ScrollArea className="rounded-md border px-2" >
+              <ScrollArea className="rounded-md border px-2 min-h-[400px]" >
                 <div className="flex flex-col w-full py-14 mx-0 stretch">
                   {messages.map(m => (
-                    m.role !== "system" && (
-                      <div key={m.id} className={`whitespace-pre-wrap py-2 ${m.role === 'user' ? 'text-right' : 'text-left'}`}>
-                        <div className={`inline-block rounded-xl py-2 px-4 ${m.role === 'user' ? 'bg-blue-500 text-white' : 'bg-gray-200 text-black'}`}>
-                          {m.content}
+                    m.role !== "system" && (m.role === 'assistant' ? (
+                      <>
+                        <div key={m.id} className={`flex justify-start whitespace-pre-wrap py-2 pr-2`}>
+                            <Image alt={m.role} src={SunnyAvatar} className="mr-2 size-12" />
+                            <div className={`inline-block rounded-xl py-3 px-4 bg-gray-200 text-black`}>
+                              <p>{m.content}</p>
+                            </div>
                         </div>
-                      </div>)
-                  ))}
+                      </>
+                    ) : (
+                      <>
+                        <div key={m.id} className={`flex justify-end items-center whitespace-pre-wrap py-2 pl-2`}>
+                          <div className={`inline-block rounded-xl py-2 px-4 bg-blue-500 text-white`}>
+                            {m.content}
+                          </div>
+                          <Image alt={m.role} src={SunnyAvatar} className="ml-2 size-12" />
+                        </div>
+                      </>
+                    )
+                    )))}
                   <div ref={messagesEndRef} />
                 </div>
               </ScrollArea>
-              <form onSubmit={promptEngineer}>
-                <div className="grid gap-4 py-4 ">
-                  <div className="grid grid-cols-5 items-center gap-4">
-                    {/* <Label htmlFor="name" className="text-right">
-                    Prompt
-                  </Label> */}
-                    <Input id="question" onChange={handleInputChange} value={input} className="col-span-4" />
-                    <Button type="submit" className="col-span-1">Ask</Button>
-                  </div>
+              <div className="grid gap-4 py-4 ">
+                <div className="grid grid-cols-5 items-center gap-4">
+                  <Input id="question" onChange={handleInputChange} value={input} className="col-span-4" />
+                  <Button type="submit" onClick={promptEngineer} className="col-span-1">Ask</Button>
                 </div>
-              </form>
+              </div>
             </DialogContent>
           </Dialog>
         )
       }
-
-
     </>
   );
 };

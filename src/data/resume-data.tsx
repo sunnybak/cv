@@ -5,6 +5,8 @@ import {
   AmazonLogo,
   ColumbiaLogo,
   UCILogo,
+  EthLogo,
+  TecnoTreeLogo,
 } from "@/images/logos";
 import { GitHubIcon, LinkedInIcon, XIcon } from "@/components/icons";
 
@@ -14,11 +16,11 @@ export const RESUME_DATA = {
   location: "California",
   locationLink: "https://www.google.com/maps/place/Irvine",
   about:
-    "driving AI adoption with optimism",
+    "driving AI adoption with optimism 🚀",
   summary: [
-    "Hi there! I'm a fullstack engineer with 4 years of experience. After graduating from Columbia University in 2020, I've worked at Amazon (~1y backend) and BitGo (~2y fullstack wallet platform integration with multiple blockchains).",
-    "I'm currently getting a Masters degree at UCI (graduating in Jun'24) while working on projects in the LLM space, an HPC product for Microsoft, and a few other tinkerings.",
-    "I'm passionate about designing intuitive user experiences, creating robust internet infrastructure, and integrating all my feedback loops with AI.",
+    "I'm an AI optimist and want to help society adopt AI faster and safer. I believe that distributed trustless networks like blockchains are the the most robust internet infra for our financial, social, and technological systems and will play a vital role in AGI security. I scale myself by learning, building, and measuring all my feedback loops. I'm interested in AI alignment, ZK-circuits, and mech interpretability.",
+    "In 2022, I joined BitGo, an institutional crypto custody Series B (now C) startup, where I scaled and led the newly formed EVM Integration Team by working on Threshold Signature Scheme wallets, fullstack wallet integration, and maintaining blockchain infra. I worked here for 2 years and left to go to grad school.",
+    "I'm currently working on several personal projects in the AI and crypto space. You can find more about these below."
   ],
   avatarUrl: "https://avatars.githubusercontent.com/u/25540727?s=400&u=51534524ecb35c86b5ef6d318baf635898531ee3&v=4",
   personalWebsiteUrl: "https://sunnybak.github.io/cv/",
@@ -55,8 +57,8 @@ export const RESUME_DATA = {
       school: "Columbia University",
       logo: ColumbiaLogo,
       degree: "Bachelor's Degree in Computer Science; Focus: AI and Crypto",
-      start: "2016",
-      end: "2020",
+      start: "Aug 2016",
+      end: "May 2020",
     },
   ],
   work: [
@@ -72,23 +74,13 @@ export const RESUME_DATA = {
         "Improving control, visibility, and predictability in enterprise HPC workloads for SPICE simulations. ▪ Building a fullstack ML product that generates simulation & HPC settings based on 3 business priorities - time to market, cost, and carbon footprint. ▪ Leading this project with 2 other UCI grad students. ▪ Concepts: React, Tensorflow, Linux, SLURM, Python, Cadence, SPICE.",
     },
     {
-      company: 'Solo Backpacking Trip',
-      badges: ["Europe", "Travel / Personal Development"],
-      title: "Travel",
-      logo: EuropeLogo,
-      start: "Jun 2023",
-      end: "Aug 2023",
-      description:
-        "Stayed in youth hostels in 15 cities across 8 countries for 2 months with a backpack. ▪ Met 1000 people from various backgrounds and went on adventures with them. ▪ Ran with the bulls in Pamplona, Spain.",
-    },
-    {
       company: "BitGo",
       link: "https://bitgo.com",
       badges: ["San Francisco"],
       title: "Software Engineer → Lead Software Engineer",
       logo: BitGoLogo,
-      start: "2021",
-      end: "2023",
+      start: "Mar 2021",
+      end: "May 2023",
       description:
         "Built crypto wallet platform & infra, signing protocols, on-chain interactions, blockchain indexer for hot, cold, and custodial wallets. ▪ Integrated blockchains such as Avalanche, Ethereum, Polygon, and Tezos into wallet stacks. ▪ Delivered Threshold Signature Scheme signing protocol for NFT custody and transactions on Polygon for clients like Nike. ▪ Developed features for WBTC tokenization indexer and platform integration. ▪ Led a team of 4 engineers to deliver crucial software features, integrations, security updates, and resolve bugs. ▪ Concepts: Node, Typescript, React, Express, MongoDB, AWS, Kubernetes, Docker, Java, Solidity, Terraform, C++.",
     },
@@ -98,8 +90,8 @@ export const RESUME_DATA = {
       badges: ["Seattle"],
       title: "Software Engineer",
       logo: AmazonLogo,
-      start: "2020",
-      end: "2021",
+      start: "Jul 2020",
+      end: "Mar 2021",
       description:
         "Constructed FlowControl, an AWS Fargate service to prevent supply-chain bottlenecks by controlling package flow. ▪ Boosted computational efficiency by simulating mock package traffic and load tests to identify process pain points. ▪ Minimized DAO-layer latency by remodeling DynamoDB schema to Kinesis streams instead of transactions. ▪ Identified a horizontal scaling solution for asynchronous SQS polling and SNS topics to expand service availability. ▪ Engineered serverless Lambda app using multithreading to reconcile stale entries, increasing WIP accuracy. ▪ Concepts: DynamoDB, AWS Lambda, SQS, Java Spring Boot, Load Testing.",
     },
@@ -120,48 +112,13 @@ export const RESUME_DATA = {
     "Tech Lead",
     "Hypothesis Testing",
   ],
-  projects: [
-    {
-      title: "SoulChat",
-      techStack: [
-        "Side Project",
-        "LLM",
-      ],
-      description: "A mental health chat app that helps you vent and get guidance",
-      link: {
-        label: "",
-        href: "",
-      },
-    },
-    {
-      title: "Basic Attention Token (BAT)",
-      techStack: [
-        "Internship",
-        "Consensys",
-      ],
-      description: "An Ethereum smart contract to create an attention-based token to decentralize the ad industry",
-      link: {
-        label: "basicattentiontoken.org/",
-        href: "https://basicattentiontoken.org/",
-      },
-    },
-    {
-      title: "Cryptech",
-      techStack: [
-        "Side Project",
-        "Zero Knowledge Proofs",
-      ],
-      description: "An API that creates a zero-knowledge proof of a real estate transaction and posts the proof to a blockchain",
-      link: {
-        label: "",
-        href: "",
-      },
-    },
+  internships: [
     {
       title: "Labor Engine Optimization",
+      logo: AmazonLogo,
       techStack: [
         "Amazon",
-        "Internship",
+        "2019"
       ],
       description: "An API to automate warehouse staffing to reduce time for fulfilling orders",
       link: {
@@ -170,25 +127,30 @@ export const RESUME_DATA = {
       },
     },
     {
-      title: "Lead-erboard",
+      title: "Basic Attention Token (BAT)",
+      logo: EthLogo,
       techStack: [
-        "Internship",
-        "TecnoTree (formerly CognitiveScale)",
+        "Consensys",
+        "2017"
       ],
-      description: "Built a Hubspot lead ranking regression model using TensorFlow",
+      description: "An Ethereum smart contract to create an attention-based token to decentralize the ad industry",
+      link: {
+        label: "basicattentiontoken.org/",
+        href: "https://basicattentiontoken.org/",
+      },
+    },
+    {
+      title: "Lead-erboard",
+      logo: TecnoTreeLogo,
+      techStack: [
+        "TecnoTree",
+        "2018"
+      ],
+      description: "A dashboard for ranking incoming sales leads using a regression TensorFlow model",
       link: {
         label: "TecnoTree",
         href: "https://www.tecnotree.com/",
       },
-    },
-
-    {
-      title: "Mech Warfare",
-      techStack: [
-        "Columbia Robotics Club",
-        "Arduino",
-      ],
-      description: "Built competitive remote controlled 4-legged shooting robot using C++ kinematics engine",
     },
   ],
 } as const;

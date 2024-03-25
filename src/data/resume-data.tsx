@@ -27,6 +27,7 @@ export const RESUME_DATA = {
   contact: {
     email: "shikharbakhda@gmail.com",
     tel: "",
+    calendly: "https://calendly.com/sunnybak",
     social: [
       {
         name: "GitHub",

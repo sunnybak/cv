@@ -49,6 +49,12 @@ export default function Blog() {
           <DemoContainer>
             <BlogCard card={BLOG_DATA.backpacking} />
           </DemoContainer>
+          <DemoContainer>
+            <BlogCard card={BLOG_DATA.cryptech} />
+          </DemoContainer>
+          <DemoContainer>
+            <BlogCard card={BLOG_DATA.mechWarfare} />
+          </DemoContainer>
         </div>
         <div className="col-span-2 grid items-start gap-6 lg:col-span-1">
         <DemoContainer>
@@ -57,7 +63,6 @@ export default function Blog() {
           <DemoContainer>
             <BlogCard card={BLOG_DATA.groq} />
           </DemoContainer>
-
         </div>
       </div>
     </>

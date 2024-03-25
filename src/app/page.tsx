@@ -76,6 +76,20 @@ export default function Page() {
                   </a>
                 </Button>
               ))}
+              {RESUME_DATA.contact.calendly ? (
+                <Button
+                  className="size-8 min-w-20"
+                  variant="default"
+                  size="icon"
+                  // style={{ backgroundColor: "black" }}
+                  asChild
+                >
+                  <a href={RESUME_DATA.contact.calendly} target="_blank">
+                    15m Call
+                  </a>
+                </Button>
+              ) : null
+              }
             </div>
             <div className="hidden flex-col gap-x-1 font-mono text-sm text-muted-foreground print:flex">
               {RESUME_DATA.contact.email ? (

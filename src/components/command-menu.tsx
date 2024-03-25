@@ -121,7 +121,7 @@ export const CommandMenu = ({ links }: Props) => {
       {
         open && (
           <Dialog open={open} onOpenChange={setOpen}>
-            <DialogContent className="xl:max-w-[700px] max-w-100 w-[1000px] h-[700px] print:hidden">
+            <DialogContent className="xl:max-w-[700px] max-w-100 w-[1000px] h-[750px] print:hidden">
               <DialogHeader>
                 <DialogTitle>Resume Chat</DialogTitle>
                 <DialogDescription>
@@ -147,10 +147,10 @@ export const CommandMenu = ({ links }: Props) => {
                     m.role !== "system" && (m.role === 'assistant' ? (
                       <>
                         <div key={m.id} className={`flex justify-start whitespace-pre-wrap py-2 pr-2`}>
-                            <Image alt={m.role} src={SunnyAvatar} className="mr-2 size-12" />
-                            <div className={`inline-block rounded-xl py-3 px-4 bg-gray-200 text-black`}>
-                              <p>{m.content}</p>
-                            </div>
+                          <Image alt={m.role} src={SunnyAvatar} className="mr-2 size-12" />
+                          <div className={`inline-block rounded-xl py-3 px-4 bg-gray-200 text-black`}>
+                            <p>{m.content}</p>
+                          </div>
                         </div>
                       </>
                     ) : (
@@ -171,6 +171,14 @@ export const CommandMenu = ({ links }: Props) => {
                 <div className="grid grid-cols-5 items-center gap-4">
                   <Input id="question" onChange={handleInputChange} value={input} className="col-span-4" />
                   <Button type="submit" onClick={promptEngineer} className="col-span-1">Ask</Button>
+                  <Button
+                    variant="default"
+                    size="lg"
+                    className="flex rounded-xl shadow-3xl col-span-5 print:hidden"
+                    style={{ backgroundColor: "blue" }}
+                  >
+                    <a href="https://calendly.com/sunnybak" target="_blank" rel="noopener noreferrer" className="px-2">Book 15mins with me on Calendly</a>
+                  </Button>
                 </div>
               </div>
             </DialogContent>

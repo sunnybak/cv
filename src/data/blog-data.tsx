@@ -5,8 +5,7 @@ import {
 export const BLOG_DATA = {
     backpacking: {
         title: 'Solo Backpacking',
-        //   badges: ["Europe", "Travel / Personal Development"],
-        subtitle: "Travel",
+        subtitle: "Travel & Personal Development",
         logo: EuropeLogo,
         start: "Jun 2023",
         end: "Aug 2023",
@@ -63,7 +62,7 @@ export const BLOG_DATA = {
         logo: EuropeLogo,
         start: "Mar 2024",
         content:
-            "Stealth startup exploring the use of LLMs for market research.",
+            "Co-founding a startup that explores the use of LLMs for market research.",
     },
     cryptech: {
         title: 'Cryptech',
@@ -72,7 +71,7 @@ export const BLOG_DATA = {
         start: "May 2018",
         end: "Aug 2018",
         content:
-            "An API that creates a zero-knowledge proof of a real estate transaction and posts the proof to a blockchain",
+            "Built an API that creates a zero-knowledge proof of a real estate transaction and posts the proof to a blockchain",
     },
     mechWarfare: {
         title: 'Mech Warfare',

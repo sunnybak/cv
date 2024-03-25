@@ -99,7 +99,7 @@ export default function Page() {
         <Tabs defaultValue="resume" className="">
           <TabsList className="flex mx-auto max-w-4xl h-8">
             <TabsTrigger value="resume" className="w-1/2 h-6">Resume</TabsTrigger>
-            <TabsTrigger value="blog" className="w-1/2 h-6">Blog</TabsTrigger>
+            <TabsTrigger value="blog" className="w-1/2 h-6">Projects</TabsTrigger>
           </TabsList>
           <TabsContent value="resume" className="py-8 mx-auto max-w-4xl">
 

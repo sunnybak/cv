@@ -20,7 +20,7 @@ export const RESUME_DATA = {
   summary: [
     "I'm an AI optimist and want to help society adopt AI faster and safer. I believe that distributed trustless networks like blockchains are the the most robust internet infra for our financial, social, and technological systems and will play a vital role in AGI security. I scale myself by learning, building, and measuring all my feedback loops. I'm interested in AI alignment, ZK-circuits, and mech interpretability.",
     "In 2022, I joined BitGo, an institutional crypto custody Series B (now C) startup, where I scaled and led the newly formed EVM Integration Team by working on Threshold Signature Scheme wallets, fullstack wallet integration, and maintaining blockchain infra. I worked here for 2 years and left to go to grad school.",
-    "I'm currently working on several personal projects in the AI and crypto space. You can find more about these below."
+    "I'm currently working on several personal projects in the AI and crypto space. You can find more about these on my blog."
   ],
   avatarUrl: "https://avatars.githubusercontent.com/u/25540727?s=400&u=51534524ecb35c86b5ef6d318baf635898531ee3&v=4",
   personalWebsiteUrl: "https://sunnybak.github.io/cv/",
@@ -120,7 +120,7 @@ export const RESUME_DATA = {
         "Amazon",
         "2019"
       ],
-      description: "An API to automate warehouse staffing to reduce time for fulfilling orders",
+      description: "At Amazon, I built an API to automate warehouse staffing to reduce time for fulfilling orders",
       link: {
         label: "amazon.com",
         href: "https://amazon.com/",
@@ -133,7 +133,7 @@ export const RESUME_DATA = {
         "Consensys",
         "2017"
       ],
-      description: "An Ethereum smart contract to create an attention-based token to decentralize the ad industry",
+      description: "At ConsenSys, I built an Ethereum smart contract to create an attention-based token to decentralize the ad industry",
       link: {
         label: "basicattentiontoken.org/",
         href: "https://basicattentiontoken.org/",
@@ -146,7 +146,7 @@ export const RESUME_DATA = {
         "TecnoTree",
         "2018"
       ],
-      description: "A dashboard for ranking incoming sales leads using a regression TensorFlow model",
+      description: "At TecnoTree, I built a dashboard for ranking incoming sales leads using a regression TensorFlow model",
       link: {
         label: "TecnoTree",
         href: "https://www.tecnotree.com/",

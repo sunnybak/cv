@@ -18,6 +18,7 @@ export function BlogCard({card}: {card: any}) {
     <Card>
       <CardHeader className="space-y-1">
         <CardTitle className="text-2xl">{card.title}</CardTitle>
+        {card.subtitle}
         <CardDescription>
         {card.content.split("▪").map((bulletPoint: any) => (
                         <p key={bulletPoint} className="text-pretty font-mono text-sm text-muted-foreground">
@@ -29,7 +30,7 @@ export function BlogCard({card}: {card: any}) {
       <CardContent className="grid gap-4">
       </CardContent>
       <CardFooter className="text-muted-foreground text-sm italic">
-          {card.subtitle} | {card.start} - {card.end}
+          {/* {card.subtitle} | {card.start} - {card.end} */}
       </CardFooter>
     </Card>
   )

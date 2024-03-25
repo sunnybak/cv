@@ -15,21 +15,21 @@ export const BLOG_DATA = {
     },
     groq: {
         title: 'Groq',
-        subtitle: 'Class Project',
+        subtitle: 'Research Review',
         logo: EuropeLogo,
         start: "Jan 2024",
         end: "Mar 2022",
         content:
-            "Researched Groq, a new AI chip startup. ▪ Wrote a 10-page paper on Groq's architecture and performance. ▪ Presented findings to the class.",
+            "Researched Groq, a new AI chip startup. ▪ Wrote a 10-page report on Groq's architecture and performance. ▪ Presented findings to the class.",
     },
     supervisedCompression: {
         title: 'Supervised Compression',
-        subtitle: 'Research',
+        subtitle: 'Research Review',
         logo: EuropeLogo,
         start: "Jan 2024",
         end: "Mar 2022",
         content:
-            "Researched supervised compression algorithms. ▪ Implemented a novel algorithm in PyTorch. ▪ Achieved 10% compression rate improvement over the state-of-the-art.",
+            "Researched supervised compression algorithms. ▪ Researched how CNNs can be partially distilled into variational autoencoders for improved performance. ▪ Presented results from state-of-the-art approaches to class.",
     },
     soulchat: {
         title: 'SoulChat',
@@ -55,11 +55,11 @@ export const BLOG_DATA = {
         logo: EuropeLogo,
         start: "Mar 2024",
         content:
-            "Researching the application of knowledge distillation to LLMs. ▪ Implementing a novel algorithm in PyTorch. ▪ Aiming to train a cluster of small LLMs using whitebox open source LLMs.",
+            "Researching the application of knowledge distillation to LLMs. ▪ Attempting to distill Mistral 7B into Llama 3B. ▪ Aiming to train a cluster of small LLMs using whitebox open source LLMs.",
     },
     stealth: {
         title: 'Stealth',
-        subtitle: 'Stealth',
+        subtitle: 'Startup',
         logo: EuropeLogo,
         start: "Mar 2024",
         content:

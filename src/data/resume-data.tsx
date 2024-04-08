@@ -16,11 +16,11 @@ export const RESUME_DATA = {
   location: "California",
   locationLink: "https://www.google.com/maps/place/Irvine",
   about:
-    "driving AI adoption with optimism 🚀",
+    "AI & crypto optimist who cares about safe AGI adoption, decentralization, and secure applications 🚀",
   summary: [
-    "I'm an AI optimist and want to help society adopt AI faster and safer. I believe that distributed trustless networks like blockchains are the the most robust internet infra for our financial, social, and technological systems and will play a vital role in AGI security. I scale myself by learning, building, and measuring all my feedback loops. I'm interested in AI alignment, ZK-circuits, and mech interpretability.",
-    "In 2022, I joined BitGo, an institutional crypto custody Series B (now C) startup, where I scaled and led the newly formed EVM Integration Team by working on Threshold Signature Scheme wallets, fullstack wallet integration, and maintaining blockchain infra. I worked here for 2 years and left to go to grad school.",
-    "I'm currently working on several personal projects in the AI and crypto space. You can find more about these on my blog."
+    "Current SaaS projects: LLM evaluation, interpretability research, AI chatbots, agents & RAG architecture",
+    "Led EVM team at BitGo to build wallet infra, custody platform for Nike NFTs, Avalanche staking, WBTC improvements.",
+    "Columbia 2020 grad experienced in fullstack blockchain and LLM applications, seeking high-impact role at early-stage startup starting June 2024."
   ],
   avatarUrl: "https://avatars.githubusercontent.com/u/25540727?s=400&u=51534524ecb35c86b5ef6d318baf635898531ee3&v=4",
   personalWebsiteUrl: "https://sunnybak.github.io/cv/",
@@ -67,7 +67,7 @@ export const RESUME_DATA = {
       company: "Microsoft Azure",
       link: "https://azure.microsoft.com/en-us",
       badges: ["Irvine", "Part-Time / Contract"],
-      title: "Lead Software Engineer",
+      // title: "Lead Software Engineer",
       logo: MicrosoftLogo,
       start: "Jan 2024",
       end: "present",
@@ -83,7 +83,7 @@ export const RESUME_DATA = {
       start: "Mar 2021",
       end: "May 2023",
       description:
-        "Built crypto wallet platform & infra, signing protocols, on-chain interactions, blockchain indexer for hot, cold, and custodial wallets. ▪ Integrated blockchains such as Avalanche, Ethereum, Polygon, and Tezos into wallet stacks. ▪ Delivered Threshold Signature Scheme signing protocol for NFT custody and transactions on Polygon for clients like Nike. ▪ Developed features for WBTC tokenization indexer and platform integration. ▪ Led a team of 4 engineers to deliver crucial software features, integrations, security updates, and resolve bugs. ▪ Concepts: Node, Typescript, React, Express, MongoDB, AWS, Kubernetes, Docker, Java, Solidity, Terraform, C++.",
+        "Architected and built custodial NFT wallets for Nike's Swoosh wallet, resulting in the creation of 300K new wallets ▪ Led the EVM Team to integrate Avalanche, Polygon, BSC into hot/cold wallets enabling AUC to increase by billions ▪ Spearheaded the onboarding of Avalanche's UTXO-based  P-chain to enable staking, leading to millions in revenue ▪ Led the onboarding of ECDSA-based blockchains to Threshold Signature Scheme, an MPC scheme for sharded keypairs ▪ Directly managed a team of 4 fulltime engineers and 3 contractors, reviewed design documents, managed projects ▪ Developed new features for WBTC tokenization engine, including its indexing and notification services ▪ Maintained node infra, implemented indexing strategies, implemented fullstack transaction building for various blockchains ▪ Developed various internal tooling, spoke to customers about bugs, worked in Blockchain Integration, EVM, Custody teams ▪ Concepts: Node, Typescript, React, Express, MongoDB, AWS, Kubernetes, Docker, Java, Solidity, Terraform, C++.",
     },
     {
       company: "Amazon",
@@ -94,7 +94,7 @@ export const RESUME_DATA = {
       start: "Jul 2020",
       end: "Mar 2021",
       description:
-        "Constructed FlowControl, an AWS Fargate service to prevent supply-chain bottlenecks by controlling package flow. ▪ Boosted computational efficiency by simulating mock package traffic and load tests to identify process pain points. ▪ Minimized DAO-layer latency by remodeling DynamoDB schema to Kinesis streams instead of transactions. ▪ Identified a horizontal scaling solution for asynchronous SQS polling and SNS topics to expand service availability. ▪ Engineered serverless Lambda app using multithreading to reconcile stale entries, increasing WIP accuracy. ▪ Concepts: DynamoDB, AWS Lambda, SQS, Java Spring Boot, Load Testing.",
+        "Constructed FlowControl, an AWS Fargate service to prevent supply-chain bottlenecks by controlling package flow  ▪ Boosted computational efficiency by simulating mock package traffic and load tests to identify process pain points  ▪ Minimized DAO-layer latency by remodeling DynamoDB schema to Kinesis streams instead of transactions ▪ Identified a horizontal scaling solution for asynchronous SQS polling and SNS topics to expand service availability ▪ Engineered serverless Lambda app using multithreading to reconcile stale entries, increasing WIP accuracy ▪ Deployed load testing service to production for the new Amazon Fulfillment Engine initiative in the Operations org ▪ Concepts: DynamoDB, AWS Lambda, SQS, Java Spring Boot, Load Testing.",
     },
   ],
   skills: [
